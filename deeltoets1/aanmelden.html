@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <title>Opdracht 1</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aanmelden">
+    <meta name="keywords" content="HTML5, Opdracht">
+</head>
+<body>
+    <header>
+        <h1>Aanmelden</h1>
+        <p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+
+        <p>
+            <em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+
+            <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.Voor vragen of opmerkingen kunt u <a href="/contact.html">contact </a> met ons op.</p>
+        </header>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Contactgegevens:</legend>
+
+                    <label for="name">Naam</label>
+                    <input type="text" id="name" required/>
+
+                    <label for="company">Bedrijf</label>
+                    <input type="text" id="company"/>
+
+                    <label for="adress">Adres</label>
+                    <input type="text" id="adress" placeholder="Straatnaam + huisnummer"/>
+
+                    <label for="postcode">Postcode</label>
+                    <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="postcode"/>
+
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" id="phone" placeholder="vb. 0629476991"/>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ik wil mij aanmelden:</legend>
+
+                    <label for="project">1: Voor een project</label>
+                    <input type="checkbox" name="project" id="project"/>
+
+                    <label for="internshipCompany">2: Als stagebedrijf</label>
+                    <input type="checkbox" name="internshipCompany" id="internshipCompany"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project:</legend>
+
+                    <label for="title">Titel</label>
+                    <input type="text" id="title" required/>
+
+                    <label for="description">Opdrachtomschrijving</label>
+                    <input type="text" id="description"/>
+
+                    <label for="targetgroup">Doelgroepomschrijving</label>
+                    <input type="text" id="targetgroup"/>
+
+                    <label for="intention">Doelstelling/intentievanhetproject</label>
+                    <input type="text" id="intention"/>
+
+                    <label for="duration">Looptijd</label>
+                    <input type="text" id="duration"/>
+
+                    <label for="deadline">Deadline</label>
+                    <input type="date" id="deadline"/>
+
+                    <label>Geschikt voor:</label>
+                    <select id = "participantsProject">
+                        <option value = "firstyears">Eerstejaars studenten</option>
+                        <option value = "secondyears">Tweedejaars studenten</option>
+                        <option value = "thirdyears">Derdejaars studenten</option>
+                        <option value = "graduating">Afstudeer studenten</option>
+                        <option value = "unknown">Onbekend</option>
+                    </select>
+
+                    <label for="additionalInformationProject">Opmerking</label>
+                    <input type="text" id="additionalInformationProject"/>     
+                </fieldset>
+
+                <fieldset>
+                    <legend>Stage</legend>
+                    <label>Geschikt voor:</label>
+                    <select id = "participantsInternship">
+                        <option value = "firstyears">Eerstejaars studenten</option>
+                        <option value = "secondyears">Tweedejaars studenten</option>
+                        <option value = "unknown">Onbekend</option>
+                    </select>
+
+                    <label>Hoe lang is de stage?</label>
+                    <select id = "durationInternship">
+                        <option value = "10">10 weken</option>
+                        <option value = "20">20 weken</option>
+                    </select> 
+
+                    <label for="beginDate">Begin datum</label>
+                    <input type="date" id="beginDate"/>  
+
+                    <label for="workDescription">Beschrijving werkzaamheden</label>
+                    <input type="text" id="workDescription"/> 
+ 
+                    <label for="companyName">Bedrijfsnaam</label>
+                    <input type="text" id="companyName"/>   
+
+                    <label for="companyAdress">Adres</label>
+                    <input type="text" id="companyAdress"/>    
+
+                    <label for="companyPostcode">Postcode</label>
+                    <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" id="companyPostcode"/>
+
+                    <label for="city">Plaats</label>
+                    <input type="text" id="city"/>
+
+                    <label for="sector">Sector</label>
+                    <input type="text" id="sector"/>
+
+                    <label for="coreBusiness">Core Business</label>
+                    <input type="text" id="coreBusiness"/>
+
+                    <label for="additionalInformationInternship">Opmerking</label>
+                    <input type="text" id="additionalInformationInternship"/> 
+                </fieldset>
+
+                <input type="submit" value="send" />
+
+            </form>
+        </section>
+    </body>
+    </html>
